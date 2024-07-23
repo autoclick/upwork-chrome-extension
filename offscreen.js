@@ -1,0 +1,1 @@
+function playAudio({source:e,volume:o}){const n=new Audio(e);n.volume=o,n.play()}chrome.runtime.onMessage.addListener((e=>{"play"in e&&playAudio(e.play)}));
